@@ -1,0 +1,89 @@
+site_name: Portfolio — Marek Procek
+site_description: Projekty, notatki i eksperymenty
+site_author: Marek Procek
+# Podmień na swój adres GitHub Pages:
+site_url: https://mprocek.github.io/portfolio/
+
+repo_url: https://github.com/mprocek/portfolio
+repo_name: mprocek/portfolio
+
+theme:
+  name: material
+  language: pl
+  icon:
+    logo: material/rocket-launch    # rakieta jako logo w nagłówku
+    favicon: material/rocket-launch # rakieta jako favicon
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - header.autohide
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Przełącz na tryb ciemny
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/white-balance-sunny
+        name: Przełącz na tryb jasny
+
+nav:
+  - Start: index.md
+  - Projekty:
+      - Katalog: projekty/index.md
+  - Kontakt: kontakt.md
+
+plugins:
+  - search:
+      lang: pl
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mprocek
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/marek-procek-2a848a51/
+      name: LinkedIn
+    - icon: material/email
+      link: mailto:marekprocek@gmail.com
+
+extra_css:
+  - assets/extra.css
+
+# Dla GitHub Pages (opcjonalnie, ale bywa wygodne)
+use_directory_urls: true

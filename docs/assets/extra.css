@@ -1,0 +1,17 @@
+/* Maksymalna szerokość kolumny treści */
+.md-grid { max-width: 1100px; }
+
+/* H1 na stronie głównej trochę większy i ciaśniejszy */
+.md-typeset h1 { letter-spacing: -0.01em; }
+
+/* Czytelniejsze listy z emoji */
+.md-typeset ul { line-height: 1.6; }
+
+/* Subtelne podbicie rozmiaru emoji w nagłówkach */
+.md-typeset h1 .twemoji,
+.md-typeset h2 .twemoji { transform: translateY(2px); }
+
+.md-typeset .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
